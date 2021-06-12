@@ -19,9 +19,8 @@ body {
 }
 .btn a{
   text-decoration: none;
-  padding: 20px 60px;
+  padding: 15px 45px;
   height: 120;
-  /*border-radius: 28px;*/
   border: 2px solid var(--bacground_color_principal);
   color: var(--bacground_color_principal);
 }
@@ -44,8 +43,10 @@ html {
   --color-a:linear-gradient(to right,#CCDC41, #74E2B9);
   
 }
-[id] {
+@media(min-width: 600px){
+  [id] {
   scroll-margin: 80px;
+}
 }
 
 /* session 1----------------- */
@@ -185,12 +186,15 @@ visibility: var(--seudoElement);
   #menu li {
     width: 90%;
     margin-left: 5%;
-    border-bottom: 1px solid rgba(187, 184, 184, 0.5);
+    /*border-bottom: 1px solid rgba(187, 184, 184, 0.5);*/
   }
   #menu li a {
     display: block;
     color: var(--bacground-color-secundario);
     padding: 20px 0;
+  }
+  #li-home{
+    display: none;
   }
 }
 #hero{
@@ -287,7 +291,6 @@ font-weight: 700;
   grid-template-rows: auto;
   grid-template-areas: ".  ." "img descrip" ". .";
   gap: 20px;
-  /*color: rgb(200,200,200);*/
 }
 @media(max-width:900px){
   #session-2 {
@@ -307,7 +310,13 @@ font-weight: 700;
   width: 300px;
   margin: auto;
 }
-
+@media(max-width:500px){
+.about-img div {
+  height: 280px;
+  width: 280px;
+  margin: auto;
+}
+}
 .about-descp {
   grid-area: descrip;
   display: flex;
@@ -330,6 +339,7 @@ font-weight: 700;
 
 /*session 3---------------------------------------------*/
 #session-3{
+  text-align: center;
   height: auto;
   width: 100%;
   padding: 0 10%;
@@ -346,6 +356,22 @@ font-weight: 700;
   font-size: 35px;
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
+}
+#others-2{
+  margin:auto; 
+  margin-top: 60px;
+  display: none;
+  left: 0;
+  right: 0;
+ }
+@media(max-width: 815px){
+
+ #others-1{
+  display: none;
+ }
+ #others-2{
+  display: block;
+ } 
 }
 .cards{
   display: grid;

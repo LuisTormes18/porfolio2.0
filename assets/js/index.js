@@ -10,6 +10,8 @@ const toogleMenu = () => {
 
 const $btnMobile = document.getElementById("btn-mobile");
 $btnMobile.addEventListener("click", toogleMenu);
+
+
 // $btnMobile.addEventListener("touchstart", toogleMenu);
 
 //   const $header = document.querySelector(".header");
