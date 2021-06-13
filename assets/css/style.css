@@ -461,8 +461,7 @@ width: 90%;
 }
 /*session 4----------------------*/
 #session-4{
-  height: 100vh;
-  position: relative;
+  height: auto;
 }
 .skills{
   height: auto;
@@ -474,12 +473,48 @@ width: 90%;
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
 }
+.skills ul{
+  margin: 40px 0px;
+  /*display: flex;
+  align-items: center;
+  justify-content: space-between;*/
+  gap:20px;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-template-rows:80px; 
+
+}
+.li-skills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  font-size: 15px;
+  font-weight: bold;  
+  height: 80px;
+  width: 200px;
+  border-radius:7px;
+  transition: .2s;
+
+}
+.li-skills:hover{
+  box-shadow: 5px 5px 5px rgb(58, 56, 56);
+}
+.li-skills img{
+  width: 45px;
+  height: 50px;
+}
+.li-skills .w{
+ width: 65px;
+}
 footer {
   color: white;
   width: 100%;
   background: var(--bacground_color_principal);
-  position: absolute;
-  bottom: 0;
+  /*position: absolute;
+  bottom: 0;*/
   height: 200px;
   display: flex;
   padding: 40px 5%;
@@ -506,4 +541,14 @@ footer .ul-icons li a{
   display: flex;
   justify-content: space-between;
   gap:20px; 
+}
+.licencia{
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+@media(max-width: 750px){
+  footer{
+    flex-direction: column;
+  }
 }
