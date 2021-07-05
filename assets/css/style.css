@@ -69,41 +69,37 @@ html {
   width: 100%;
   z-index: 12000;
   transition: 0.6s;
+
+  padding-top: 30px;
+
 }
-.active {
+.sticky {
   background: var(--bacground_color_principal);
 }
-.active #menu a {
+.sticky #menu a {
 color: white;
 }
-.active #logo span {
+.sticky #logo span {
 color: white;
 }
 #logo {
-  display: block;
   position: relative;
   width: 100px;
   height: 50px;
   z-index: 12000;
-  display: flex;
-  align-items: center;
 }
 #logo span{
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 35px;
-  font-weight: 100;
-}
-#logo img {
-  width: 100%;
-  height: 100%;
+  font-size: 30px;
+  font-weight: 50;
 }
 #menu {
-  padding-top: 40px;
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 25px;
+  column-gap: 25px;
+  /*gap: 25px;*/
 }
 #menu a {
   text-decoration: none;
@@ -117,11 +113,11 @@ color: white;
   display: block;
   height: 2px;
   width: 100%;
-  margin-top: 10px;
   background: white;
   visibility: var(--seudoElement);
 }
 #menu > li > a:hover {
+  font-weight: bold;
   color: white;
   --seudoElement: visible;
 }
@@ -231,9 +227,10 @@ color: white;
 .hero__text h1 {
   text-transform: uppercase;
   font-size: 70px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
+  padding-bottom: 20px;
 }
 .hero__text p {
   padding: 5px 0;

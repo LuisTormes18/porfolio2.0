@@ -16,8 +16,8 @@ window.onscroll = ()=>{
   let Scrollposition = window.pageYOffset;
   
   if (Scrollposition > 0) {
-    $header.classList.add('active');
+    $header.classList.add('sticky');
   } else {
-    $header.classList.remove('active');
+    $header.classList.remove('sticky');
   }
 }
