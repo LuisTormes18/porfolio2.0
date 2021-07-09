@@ -70,41 +70,48 @@ html {
   z-index: 12000;
   transition: 0.6s;
 
-  padding-top: 30px;
-
 }
+@media (min-width: 600px) {
 .sticky {
   background: var(--bacground_color_principal);
 }
 .sticky #menu a {
-color: white;
+  color: white;
 }
 .sticky #logo span {
-color: white;
+  color: white;
+}
 }
 #logo {
   position: relative;
   width: 100px;
-  height: 50px;
+  height: 100%;
   z-index: 12000;
 }
-#logo span{
+/*#logo span {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 50;
+}*/
+#logo #img-logo{
+  width: 100%;
+  height: 65px;
+  padding-top: 10px;
 }
 #menu {
   display: flex;
   align-items: center;
   list-style: none;
   column-gap: 25px;
-  /*gap: 25px;*/
+  
+  padding-top: 30px;
+
 }
 #menu a {
   text-decoration: none;
   color: black;
-  padding:0 5px;
+  padding: 0 5px;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
 }
@@ -300,10 +307,9 @@ color: white;
   grid-template-areas: ".  ." "img descrip" ". .";
   gap: 20px;
 }
-#who{
+#who {
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
-
 }
 @media (max-width: 900px) {
   #session-2 {
@@ -401,7 +407,6 @@ color: white;
   min-width: 305px;
   max-height: 600px;
   text-align: left;
-
 }
 .card:hover {
   box-shadow: var(--box-shadow-hover);
@@ -420,12 +425,11 @@ color: white;
 }
 @media (max-width: 350px) {
   .card {
-  min-width: 100%;
-
+    min-width: 100%;
   }
 }
 
-.card-skills{
+.card-skills {
   height: 30px;
   display: flex;
   align-items: center;
@@ -433,28 +437,24 @@ color: white;
   column-gap: 25px;
   padding: 10px;
   margin: 10px;
-  
-
 }
-.card-skills img{
+.card-skills img {
   width: 30px;
   height: 30px;
 }
 
-
-.card-btn{
-   text-align: right;
-   width: 100%;
+.card-btn {
+  text-align: right;
+  width: 100%;
   height: 50px;
-
 }
-.card-btn a{
-   padding:0px 10px;
-   margin: 10px;
+.card-btn a {
+  padding: 0px 10px;
+  margin: 10px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
 }
-.card-btn a:hover{
+.card-btn a:hover {
   font-weight: bold;
 }
 .card-title {
@@ -494,7 +494,7 @@ color: white;
 }
 .skills ul {
   margin: 40px 0px;
-   gap: 20px;
+  gap: 20px;
   list-style: none;
 
   display: grid;
@@ -553,7 +553,7 @@ footer .ul-icons li a {
   justify-content: space-between;
   gap: 20px;
 }
-.menu-footer a{
+.menu-footer a {
   text-decoration: none;
 }
 .licencia {
