@@ -428,7 +428,9 @@ html {
     min-width: 100%;
   }
 }
-
+.card-footer{
+  border-top: 1px solid var(--bacground_color_principal);
+}
 .card-skills {
   height: 30px;
   display: flex;
