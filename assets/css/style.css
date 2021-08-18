@@ -521,9 +521,9 @@ html {
   border-radius: 7px;
   transition: 0.2s;
 }
-.li-skills:hover {
+/*.li-skills:hover {
   box-shadow: 5px 5px 5px rgb(58, 56, 56);
-}
+}*/
 .li-skills img {
   width: 45px;
   height: 50px;
@@ -572,4 +572,17 @@ footer .ul-icons li a {
   footer {
     flex-direction: column;
   }
+}
+
+/*page others*/
+#page-others{
+  height: auto;
+  width: 100%;
+  padding: 0 5%;
+}
+#page-others .cards{
+  width: 100%;
+  background-color: yellow;
+  gap:0;
+  height: auto;
 }

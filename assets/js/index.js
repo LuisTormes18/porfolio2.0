@@ -25,3 +25,10 @@ window.onscroll = ()=>{
 
   }
 }
+
+// load projects
+const projects = [];
+
+const loadProjects = () =>{
+
+}
