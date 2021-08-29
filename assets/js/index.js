@@ -1,16 +1,20 @@
 
 const toogleMenu = () => {
   const $nav = document.getElementById("navbar");
+  const $logo = document.querySelector('.img-logo');
+
   $nav.classList.toggle("active-menu-mobile");
+  $logo.classList.toggle("logo-oscuro");
+  $logo.classList.toggle("logo-claro");
+
 };
 
 const $btnMobile = document.getElementById("btn-mobile");
-$btnMobile.addEventListener("click", toogleMenu);
+$btnMobile.addEventListener("click",toogleMenu);
 
 
 const $header = document.querySelector(".header");
 const $session1 = document.querySelector("#session-1");
-const $logo = document.getElementById('img-logo');
 
 window.onscroll = ()=>{
 
@@ -18,10 +22,8 @@ window.onscroll = ()=>{
   
   if (Scrollposition > 0) {
     $header.classList.add('sticky');
-    $logo.setAttribute('src','./assets/img/logo_claro.png')
   } else {
     $header.classList.remove('sticky');
-    $logo.setAttribute('src','./assets/img/logo.png')
 
   }
 }
@@ -81,6 +83,6 @@ $card_btn.innerHTML =` <a
 
 }
 
-const $cardsPageOthres = ddocument.getElementById('cardsPageOthres');
-const $indexCards = ddocument.getElementById('indexCards');
+const $cardsPageOthres = document.getElementById('cardsPageOthres');
+const $indexCards = document.getElementById('indexCards');
 

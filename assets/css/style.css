@@ -76,33 +76,44 @@ html {
   transition: 0.6s;
 
 }
+#logo {
+  position: relative;
+  width: 120px;
+  height: 100%;
+  z-index: 12000;
+}
+
+#logo .img-logo{
+  width: 100%;
+  height: 65px;
+  padding-top: 10px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.logo-oscuro{
+  background-image: url("../img/logo.png");
+}
+.logo-claro{
+  background-image: url("../img/logo_claro.png");
+
+}
 @media (min-width: 600px) {
 .sticky {
   background: var(--bacground_color_principal);
 }
 .sticky #menu a {
   color: white;
+
 }
-.sticky #logo span {
-  color: white;
+
 }
-}
-#logo {
-  position: relative;
-  width: 100px;
-  height: 100%;
-  z-index: 12000;
-}
-/*#logo span {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 50;
-}*/
-#logo #img-logo{
-  width: 100%;
-  height: 65px;
-  padding-top: 10px;
+.sticky #logo .img-logo{
+  background-image: url('../img/logo_claro.png');
+
+  
 }
 #menu {
   display: flex;
@@ -173,9 +184,11 @@ html {
   .active-menu-mobile > #btn-mobile > #hamburger::after {
     transform: rotate(-135deg);
     top: -9px;
+    color: white;
   }
   .active-menu-mobile > #btn-mobile > #hamburger::before {
     transform: rotate(135deg);
+    color: white;
   }
   .header {
     position: relative;
@@ -209,7 +222,7 @@ html {
   }
   #menu li a {
     display: block;
-    color: var(--bacground-color-secundario);
+    color: white;
     padding: 20px 0;
   }
   #li-home {
@@ -225,7 +238,10 @@ html {
 }
 .hero__text {
   width: 80%;
+  max-width: 800px;
   height: auto;
+  max-height: 400px;
+
   padding: 100px 40px;
   background: rgba(250, 250, 250, 0.3);
   position: relative;
@@ -242,7 +258,7 @@ html {
   font-weight: 500;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
-  padding-bottom: 20px;
+  padding-top: 10px;
 }
 .hero__text p {
   padding: 5px 0;
@@ -466,7 +482,8 @@ html {
   padding: 0px 10px;
   margin: 10px;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
+  color: var(--bacground_color_principal);
 }
 .card-btn a:hover {
   font-weight: bold;
@@ -498,8 +515,7 @@ html {
 }
 .skills {
   height: auto;
-  padding: 0 5%;
-  padding-top: 40px;
+  padding: 100px 5%;
 }
 .skills h2 {
   font-size: 35px;
