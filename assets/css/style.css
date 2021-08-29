@@ -278,6 +278,9 @@ html {
   .hero__text h1 {
     font-size: 40px;
   }
+  .hero__text p {
+    font-size: 20px;
+  }
   .ul-icons {
     padding-top: 20px;
   }
