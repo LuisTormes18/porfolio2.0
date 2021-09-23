@@ -10,6 +10,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+*:root {
+  --bacground_color_principal: #2c2c2c;
+  --bacground-color-secundario: rgb(128, 128, 128);
+  --color-title: rgb(78, 78, 78);
+  --color-hover: rgb(250, 250, 249);
+  --box-shadow: 5px 5px 5px rgb(83, 83, 82);
+  --box-shadow-hover: 10px 10px 10px rgb(58, 56, 56);
+  --vibility: hidden;
+  --seudoElement: hidden;
+  --color-a: linear-gradient(to right, #ccdc41, #74e2b9);
+}
 html,
 body {
   overflow-x: hidden;
@@ -33,20 +47,7 @@ body {
   background: var(--bacground_color_principal);
   color: white;
 }
-html {
-  scroll-behavior: smooth;
-}
-*:root {
-  --bacground_color_principal: #2c2c2c;
-  --bacground-color-secundario: rgb(128, 128, 128);
-  --color-title: rgb(78, 78, 78);
-  --color-hover: rgb(250, 250, 249);
-  --box-shadow: 5px 5px 5px rgb(83, 83, 82);
-  --box-shadow-hover: 10px 10px 10px rgb(58, 56, 56);
-  --vibility: hidden;
-  --seudoElement: hidden;
-  --color-a: linear-gradient(to right, #ccdc41, #74e2b9);
-}
+
 @media (min-width: 600px) {
   [id] {
     scroll-margin: 80px;
@@ -56,6 +57,7 @@ html {
 /* session 1----------------- */
 #session-1 {
   height: 100vh;
+  /*background-image: url("https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");*/
   background-image: url("../img/fondo.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -207,8 +209,8 @@ html {
     transition: 0.6s;
   }
   .active-menu-mobile #menu {
-    /* height: calc(100vh - 80px); */
     height: 100vh;
+    max-height: 600px;
     width: 100%;
     right: 0px;
     padding-top: 80px;
@@ -483,7 +485,7 @@ html {
   margin: 10px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
-  color: var(--bacground_color_principal);
+  color: blue;
 }
 .card-btn a:hover {
   font-weight: bold;
@@ -548,8 +550,8 @@ html {
   box-shadow: 5px 5px 5px rgb(58, 56, 56);
 }*/
 .li-skills img {
-  width: 45px;
-  height: 50px;
+  width: 43px;
+  height: 45px;
 }
 .li-skills .w {
   width: 65px;
@@ -597,15 +599,3 @@ footer .ul-icons li a {
   }
 }
 
-/*page others*/
-#page-others{
-  height: auto;
-  width: 100%;
-  padding: 0 5%;
-}
-#page-others .cards{
-  width: 100%;
-  background-color: yellow;
-  gap:0;
-  height: auto;
-}
