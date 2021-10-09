@@ -285,6 +285,7 @@ font-size: 25px;
 /* session-2 --------------------------------------------------------*/
 #session-2 {
     height: 100vh;
+    max-height: 800px;
     padding: 100px 10%;
     display: grid;
     grid-template-columns: 50% 50%;
